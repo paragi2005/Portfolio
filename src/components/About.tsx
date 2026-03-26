@@ -50,12 +50,11 @@ const About: React.FC = () => {
                             Defined by <span className="text-emerald-500">Data</span>.
                         </h2>
 
+
                         <p className="text-gray-400 mb-6 text-lg leading-relaxed font-light">
                             I'm Paragi Patil, a B.Tech student in Computer Science and Engineering with a focus on <span className="text-white font-medium">Data Science</span>.
                             My passion lies at the intersection of complex data analysis and intuitive web experiences.
                         </p>
-
-
 
                         <div className="grid grid-cols-3 gap-8 py-6 border-y border-white/5">
                             <div>
