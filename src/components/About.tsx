@@ -55,11 +55,7 @@ const About: React.FC = () => {
                             My passion lies at the intersection of complex data analysis and intuitive web experiences.
                         </p>
 
-                        <p className="text-gray-400 mb-8 text-lg leading-relaxed font-light">
-                            I thrive on building real-world projects that solve actual problems. From training machine learning models
-                            to crafting pixel-perfect responsive web applications, I am committed to delivering high-quality,
-                            impactful tech solutions.
-                        </p>
+
 
                         <div className="grid grid-cols-3 gap-8 py-6 border-y border-white/5">
                             <div>
@@ -70,10 +66,7 @@ const About: React.FC = () => {
                                 <h4 className="text-white font-bold text-xl mb-1">2023 – 2027</h4>
                                 <p className="text-sm text-gray-500 font-medium tracking-wide uppercase">Pursuing</p>
                             </div>
-                            <div>
-                                <h4 className="text-white font-bold text-xl mb-1">CGPA: 8.13</h4>
-                                <p className="text-sm text-gray-500 font-medium tracking-wide uppercase">Current GPA</p>
-                            </div>
+
                         </div>
 
 

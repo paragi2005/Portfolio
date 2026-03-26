@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 
-const EducationItem = ({ degree, institution, period, location, delay }: { degree: string, institution: string, period: string, location: string, delay: number }) => (
+const EducationItem = ({ degree, institution, period, location, delay, cgpa }: { degree: string, institution: string, period: string, location: string, delay: number, cgpa?: string }) => (
     <motion.div
         className="relative pl-8 pb-12 last:pb-0 group"
         initial={{ opacity: 0, x: -20 }}
@@ -24,15 +24,24 @@ const EducationItem = ({ degree, institution, period, location, delay }: { degre
                 </span>
             </div>
 
-            <div className="space-y-2">
-                <div className="flex items-center gap-2 text-gray-300 font-medium">
-                    <GraduationCap size={18} className="text-purple-500" />
-                    {institution}
+            <div className="space-y-4">
+                <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-gray-300 font-medium">
+                        <GraduationCap size={18} className="text-purple-500" />
+                        {institution}
+                    </div>
+                    <div className="flex items-center gap-2 text-gray-500 text-sm">
+                        <MapPin size={16} />
+                        {location}
+                    </div>
                 </div>
-                <div className="flex items-center gap-2 text-gray-500 text-sm">
-                    <MapPin size={16} />
-                    {location}
-                </div>
+
+                {cgpa && (
+                    <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-emerald-500/10 text-emerald-400 text-sm font-bold rounded-xl border border-emerald-500/20">
+                        <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></div>
+                        CGPA: {cgpa}
+                    </div>
+                )}
             </div>
         </div>
     </motion.div>
@@ -59,6 +68,7 @@ const Education: React.FC = () => {
                         institution="R.C. Patel Institute of Technology, Shirpur"
                         period="2023 – 2027"
                         location="Shirpur, Maharashtra"
+                        cgpa="8.13 (Aggregate)"
                         delay={0.2}
                     />
                     {/* Add more if needed, but the user only mentioned one */}
