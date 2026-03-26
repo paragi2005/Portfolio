@@ -56,6 +56,13 @@ const About: React.FC = () => {
                             My passion lies at the intersection of complex data analysis and intuitive web experiences.
                         </p>
 
+                        <p className="text-gray-400 mb-8 text-lg leading-relaxed font-light">
+                            I thrive on building real-world projects that solve actual problems. From training machine learning models
+                            to crafting pixel-perfect responsive web applications, I am committed to delivering high-quality,
+                            impactful solutions.
+                        </p>
+
+
                         <div className="grid grid-cols-3 gap-8 py-6 border-y border-white/5">
                             <div>
                                 <h4 className="text-white font-bold text-xl mb-1">B.Tech CSE</h4>
